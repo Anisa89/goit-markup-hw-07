@@ -1,0 +1,24 @@
+.address {
+  margin-left: auto;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-nav__portfolio:hover,
+.site-nav__portfolio:focus,
+.header-mail__link:hover,
+.header-mail__link:focus,
+.header-tel__link:hover,
+.header-tel__link:focus {
+  color: #2196f3;
+}
+
+.site-nav__portfolio {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

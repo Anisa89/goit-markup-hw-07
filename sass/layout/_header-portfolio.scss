@@ -1,0 +1,55 @@
+.portfolio-header .container {
+  align-items: center;
+  display: flex;
+
+  /*padding-top: 24px;
+   padding-bottom: 25px;
+   background-color: #ffffff;*/
+}
+.portfolio-header {
+  border: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  background-color: #ffffff;
+}
+
+.link-portfolio-link {
+  display: block;
+  margin-right: 92px;
+  /*padding-top: 32px;
+  padding-bottom: 32px;*/
+  animation-duration: 1000ms;
+  animation-iteration-count: 4;
+}
+.logo-list {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+}
+.logo-list2 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.navigation {
+  display: flex;
+}
+
+.header__list {
+  display: flex;
+}

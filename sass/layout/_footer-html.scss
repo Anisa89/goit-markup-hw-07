@@ -1,0 +1,235 @@
+/*Footer html*/
+.page-footer {
+  background: #2f303a;
+  display: block;
+}
+
+.page-footer > .container {
+  display: flex;
+
+  align-items: center;
+}
+
+.nav-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.nav-footer__wraper {
+  padding-bottom: 20px;
+}
+
+.logo-footer {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+}
+
+.logo-footer-two {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-map-link {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1, 714;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+.tel-item,
+.mail-item {
+  padding-top: 9px;
+}
+
+.footer-tel-link,
+.footer-mail-link {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1, 714;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+/*footer NAV FINISH*/
+/*fOOTER SOCIAL LINK*/
+.social-wraper {
+  display: block;
+  min-width: 206px;
+  height: 120px;
+  margin-left: 102px;
+  margin-bottom: 20px;
+}
+.join {
+  display: inline-block;
+  margin-bottom: 21px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: left;
+
+  padding-top: 12px;
+}
+
+.footer-social-list {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+}
+
+.footer-social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: rgba(255, 255, 255, 0.1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-list-link:hover,
+.footer-list-link:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.footer-social-list-link:hover .footer-social-list-svg,
+.footer-social-list-link:focus .footer-social-list-svg {
+  fill: currentColor;
+}
+.footer-social-list-svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+/*FOOTER SOCIAL FINISH*/
+/*FOOTER INPUT*/
+
+.footer-subscribe-wraper {
+  display: block;
+  width: 570px;
+  height: 86px;
+  margin-left: 93px;
+  margin-bottom: 20px;
+}
+.subscribe-form {
+  display: inline-flex;
+  align-items: center;
+}
+.subscribe-letter {
+  display: flex;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.modal-form-subscrib {
+  display: block;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+
+  border-radius: 4px;
+  padding-left: 16px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+}
+.modal-form-subscrib::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.modal-subscribe-button {
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+}
+
+.modal-subscribe-link {
+  width: 109px;
+  height: 30px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  padding-left: 30px;
+}
+.modal-subscribe-button-wraper {
+  position: relative;
+  cursor: pointer;
+}
+.modal-subscribe-button {
+  cursor: pointer;
+}
+.modal-subscribe-button::after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.iconsend::after {
+  position: absolute;
+  background-image: url('../images/SVG/icon.send.svg.svg');
+
+  top: 50;
+  right: 50;
+  transform: translate(150px, -28px);
+}
+/*FOOTER INPUT FINISH*/
