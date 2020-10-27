@@ -1,6 +1,3 @@
-/*main index.html*/
-
-/*Hero*/
 .Hero {
   background: #2f303a;
   align-items: center;
@@ -17,21 +14,21 @@
   background-size: cover;
 }
 
-.wraper-title__hero {
-  font-family: Roboto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
-  /* or 136% */
-
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-
-  align-content: center;
-}
 .wraper-title {
   padding-left: 30px;
+  &__hero {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    /* or 136% */
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    align-content: center;
+  }
 }

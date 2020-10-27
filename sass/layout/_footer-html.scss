@@ -1,18 +1,25 @@
-/*Footer html*/
 .page-footer {
   background: #2f303a;
   display: block;
+  & > .container {
+    display: flex;
+
+    align-items: center;
+  }
 }
 
-.page-footer > .container {
+/*.page-footer > .container {
   display: flex;
 
   align-items: center;
-}
+}*/
 
 .nav-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  &__wraper {
+    padding-bottom: 20px;
+  }
 }
 .nav-footer__wraper {
   padding-bottom: 20px;
@@ -23,11 +30,19 @@
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
-  /* identical to box height */
 
   letter-spacing: 0.03em;
 
-  color: #2196f3;
+  color: $hover-color;
+  &-two {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
 }
 
 .logo-footer-two {
@@ -71,8 +86,7 @@
 
   color: rgba(255, 255, 255, 0.6);
 }
-/*footer NAV FINISH*/
-/*fOOTER SOCIAL LINK*/
+
 .social-wraper {
   display: block;
   min-width: 206px;
@@ -99,6 +113,22 @@
   display: flex;
   width: 206px;
   justify-content: space-between;
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: rgba(255, 255, 255, 0.1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: $hover-color;
+      color: #ffffff;
+    }
+  }
 }
 
 .footer-social-list-link {
@@ -113,20 +143,23 @@
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-list-link:hover,
 .footer-list-link:focus {
-  background-color: #2196f3;
+  background-color: $hover-color;
   color: #ffffff;
 }
 
-.footer-social-list-link:hover .footer-social-list-svg,
+/*.footer-social-list-link:hover .footer-social-list-svg,
 .footer-social-list-link:focus .footer-social-list-svg {
   fill: currentColor;
-}
+}*/
 .footer-social-list-svg {
   width: 20px;
   height: 20px;
   fill: #ffffff;
+  .footer-social-list-link:hover &,
+  .footer-social-list-link:focus & {
+    fill: currentColor;
+  }
 }
 /*FOOTER SOCIAL FINISH*/
 /*FOOTER INPUT*/
@@ -166,8 +199,20 @@
   padding-left: 16px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
-.modal-form-subscrib::placeholder {
+/*.modal-form-subscrib::placeholder {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -177,11 +222,11 @@
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
-}
+}*/
 .modal-subscribe-button {
   width: 200px;
   height: 50px;
-  background-color: #2196f3;
+  background-color: $hover-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-left: 12px;
@@ -233,3 +278,63 @@
   transform: translate(150px, -28px);
 }
 /*FOOTER INPUT FINISH*/
+.page-footer {
+  background: #2f303a;
+  display: block;
+}
+.page-footer > .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: $hover-color;
+}
+.footer-map-link {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  padding-top: 20px;
+}
+.footer-map-item-list,
+.footer-item-tel,
+.footer-item-mail {
+  padding-bottom: 9px;
+}
+
+.footer-tel-link,
+.footer-mail-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.tel-item,
+.mail-item {
+  padding-top: 9px;
+}
+.footer-map-link:hover,
+.footer-map-link:focus,
+.footer-tel-link:hover,
+.footer-tel-link:focus,
+.footer-mail-link:hover,
+.footer-mail-link:focus {
+  color: $hover-color;
+}

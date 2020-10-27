@@ -1,13 +1,15 @@
 .description-services {
   padding-bottom: 94px;
-}
-.description-services__list {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.description-services__item:not(:last-child) {
-  margin-right: 30px;
+  &__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__item {
+    position: relative;
+  }
 }
 
 .description-title {
@@ -17,12 +19,10 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: $secondary-color;
   padding-bottom: 50px;
 }
-.description-services__item {
-  position: relative;
-}
+
 .describtion-wraper__img {
   position: absolute;
   display: flex;
